@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap")
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: linear-gradient(45deg,#0a0a0a,#3a4452);
+
+}
+/* Heading with Animation 
+.calculator-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+    }
+}*/
+.calculator-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between signs and text */
+    animation: glow 2s infinite alternate;
+    font-family: 'Roboto Mono';
+}
+
+.math-sign {
+    color: #ff9500; /* Orange color for mathematical signs */
+    font-size: 2rem;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff9500, 0 0 40px #ff9500;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff9500, 0 0 40px #ff9500, 0 0 50px #ff9500;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.c1{
+    height: auto;
+    width:25vw;
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0px 3px 15px rgba(133,155, 119, 0.9);
+    opacity: 10px;
+    text-align: center;
+}
+input{
+    width: 320px;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+
+
+}
+input::placeholder{
+    color: white;
+}
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50px;
+    background: transparent;
+    box-shadow:0px 3px 15px rgba(84, 84, 84, 0.1) ;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.equal{
+    background: orangered;
+}
+.operator{
+    color:aqua
+}
