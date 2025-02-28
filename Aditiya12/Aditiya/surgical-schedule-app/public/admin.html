@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/astyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center text-primary">Admin Panel</h2>
+        
+        <ul class="nav nav-tabs mt-4" id="adminTabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="doctor-tab" data-bs-toggle="tab" href="#doctor-form">Add Doctor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="surgery-tab" data-bs-toggle="tab" href="#surgery-form">Add Surgery</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            Doctor Form
+            <div id="doctor-form" class="tab-pane fade show active">
+                <h4>Add Doctor</h4>
+                <form id="add-doctor-form">
+                    <div class="mb-3">
+                        <label class="form-label">Doctor Name</label>
+                        <input type="text" class="form-control" id="doctor-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Specialization</label>
+                        <input type="text" class="form-control" id="doctor-specialization" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Doctor</button>
+                </form>
+            </div>
+
+            Surgery Form
+            <div id="surgery-form" class="tab-pane fade">
+                <h4>Add Surgery</h4>
+                <form id="add-surgery-form">
+                    <div class="mb-3">
+                        <label class="form-label">Surgery Name</label>
+                        <input type="text" class="form-control" id="surgery-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Type</label>
+                        <input type="text" class="form-control" id="surgery-type" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Surgeon</label>
+                        <input type="text" class="form-control" id="surgery-surgeon" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-control" id="surgery-date" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Surgery</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="doctors.html" class="btn btn-secondary mt-4">View Doctors</a>
+        <a href="surgeries.html" class="btn btn-secondary mt-2">View Surgeries</a>
+    </div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/astyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center text-primary">Admin Panel</h2>
+        
+        <ul class="nav nav-tabs mt-4" id="adminTabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="doctor-tab" data-bs-toggle="tab" href="#doctor-form">Add Doctor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="surgery-tab" data-bs-toggle="tab" href="#surgery-form">Add Surgery</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <!-- Doctor Form -->
+            <div id="doctor-form" class="tab-pane fade show active">
+                <h4>Add Doctor</h4>
+                <form id="add-doctor-form">
+                    <div class="mb-3">
+                        <label for="doctor-name" class="form-label">Doctor Name</label>
+                        <input type="text" class="form-control" id="doctor-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="doctor-specialization" class="form-label">Specialization</label>
+                        <input type="text" class="form-control" id="doctor-specialization" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Doctor</button>
+                </form>
+            </div>
+
+            <!-- Surgery Form -->
+            <div id="surgery-form" class="tab-pane fade">
+                <h4>Add Surgery</h4>
+                <form id="add-surgery-form">
+                    <div class="mb-3">
+                        <label for="surgery-name" class="form-label">Surgery Name</label>
+                        <input type="text" class="form-control" id="surgery-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="surgery-type" class="form-label">Type</label>
+                        <input type="text" class="form-control" id="surgery-type" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="surgery-surgeon" class="form-label">Surgeon</label>
+                        <input type="text" class="form-control" id="surgery-surgeon" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="surgery-date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="surgery-date" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Surgery</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="doctors.html" class="btn btn-secondary mt-4">View Doctors</a>
+        <a href="surgeries.html" class="btn btn-secondary mt-2">View Surgeries</a>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,250 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #00aaff, #4e42c2); /* Gradient background */
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    position: relative;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: translateY(-3px); /* Smooth lift effect */
+}
+
+.nav-links li a:active {
+    background-color: #3498db;
+    color: #fff;
+    transform: translateY(1px); /* Button click effect */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.search-input {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    outline: none;
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-input:focus {
+    border-color: #3498db; /* Border color on focus */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.7); /* Focus glow effect */
+}
+
+.search-btn {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly grow effect */
+}
+
+.search-btn:active {
+    transform: scale(0.98); /* Button shrink effect on click */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .search-bar {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 200px;
+    }
+}
+
+.front-page {
+    position: relative;
+    background-image: url("https://www.concretecms.com/application/files/1716/8329/9745/Medical_Website_Design.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.front-page .overlay {
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay to enhance text visibility */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-page .content {
+    text-align: center;
+    z-index: 10;
+    max-width: 600px;
+}
+
+.front-page h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.front-page h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.front-page p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.front-page .btn-book {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.front-page .btn-book:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
+}
+
+.front-page .btn-book:active {
+    transform: translateY(2px);
+}
+
+
+.service-container {
+    display: flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    align-items : center;
+    height : 30vh;
+    margin : 0 auto;
+}
+
+.service-card {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.service-card i {
+    font-size: 30px;
+    color: #007bff;  /* Change color as needed */
+    margin-bottom: 10px;
+}

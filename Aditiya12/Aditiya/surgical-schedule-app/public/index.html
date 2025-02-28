@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Management System</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    
+    <!-- Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/indexstyle.css" />
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>HMS</h1>
+        </div>
+        
+        <!-- Search Bar -->
+        <form class="search-bar" action="#" method="get">
+          <input type="text" placeholder="Search Doctor or Hospital Here" name="search" class="search-input" />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="login.html" id="login-link">Login</a></li>
+          <!-- <li><a href="register.html" id="register-link">Register</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="front-page">
+      <div class="overlay">
+        <div class="content">
+          <h2>Welcome to Our Healthcare System</h2>
+          <h3>Your Health, Our Priority</h3>
+          <p>
+            Experience top-notch medical care from our expert doctors and state-of-the-art facilities. We are here to provide the best treatment for you and your loved ones.
+          </p>
+          <a href="book_a.html" class="btn-book">Book an Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <div class="service-container">
+      <div class="service-card">
+        <a href="find_doctor.html">
+          <i class="fas fa-calendar-check"></i>
+          <h3>Book Appointment</h3>
+        </a>
+      </div>
+      <div class="service-card">
+        <a href="find_doctor.html">
+          <i class="fas fa-user-md"></i>
+          <h3>Find Doctor</h3>
+        </a>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-notes-medical"></i>
+        <h3>Book Health Check-Up</h3>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-laptop-medical"></i>
+        <h3>Consult Online</h3>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-pills"></i>
+        <h3>Buy Medicine</h3>
+      </div>
+    </div>
+
+    <!-- Firebase Script -->
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/auth.js"></script>
+  </body>
+</html>

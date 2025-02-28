@@ -1,0 +1,158 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Background Styling */
+body {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Glassmorphism Card */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Login GIF */
+.login-gif {
+  width: 120px;
+  margin-bottom: 15px;
+  animation: bounce 1.5s infinite alternate;
+}
+
+/* Headings */
+h2 {
+  color: #2c3e50;
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #004494);
+  transform: scale(1.05);
+}
+
+/* Google Button */
+#google-login {
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+
+#google-login:hover {
+  background: #f5f5f5;
+}
+
+/* Admin Panel Button */
+#admin-panel {
+  background: #f39c12;
+}
+
+#admin-panel:hover {
+  background: #e67e22;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .glass {
+    width: 90%;
+  }
+}
+
+
+
+.login-gif {
+  width: 120px;
+  margin-bottom: 15px;
+  animation: bounce 1.5s infinite alternate;
+  background: none;
+  mix-blend-mode: multiply; /* Helps blend with the background */
+}
